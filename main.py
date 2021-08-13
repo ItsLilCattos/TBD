@@ -184,7 +184,7 @@ async def verify(ctx):
 
 	await user.add_roles(role)
 	channel = await user.create_dm()
-	await channel.send("You are verified in Angies server")
+	await channel.send("You are verified in Angie's server")
 
 
 @client.command()
@@ -212,8 +212,8 @@ async def say(ctx, *, cont):
 
 @client.command(name="8ball")
 async def ball(ctx, qu):
-	ansk = ["yes", "no", "nope", "yup"]
-	ans = random.choice(ansk)
+	anskey = ["yes", "no", "nope", "yup"]
+	ans = random.choice(anskey)
 	await ctx.send(ans)
 
 
@@ -315,6 +315,6 @@ for filename in os.listdir('./cogs'):
 
 client.run(os.environ.get('Token'))
 
-## I made a .env because this repl.it project is public and other people would be able to see our token, but since i put it in a .env file noone will be able to see it
+## I made a .env because this repl.it project is public and other people would be able to see our token, but since i put it in a .env file no one will be able to see it
 
 ##okay thanks
