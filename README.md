@@ -5,5 +5,5 @@
 ## To setup and run the code  
 
 run the command: `pip install -r requirements.txt`  
-rename the file `example.env` and edit it as needed  
+copy and rename the file `example.env` and edit it as needed  
 run `python3 main.py`
