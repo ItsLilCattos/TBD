@@ -1,0 +1,8 @@
+flask
+discord.py
+discord.py[voice]
+python-dotenv
+requests
+asyncio
+aiosqlite
+youtube_dl

@@ -1,5 +1,6 @@
 from flask import Flask
 from threading import Thread
+from discord.ext import tasks
 
 app = Flask('')
 
@@ -14,4 +15,5 @@ def keep_alive():
     server = Thread(target=run)
     server.start() 
 
-@tasks.loop(seconds=15) 
+# nothing to loop over... leaving
+# @tasks.loop(seconds=15) 

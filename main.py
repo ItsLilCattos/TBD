@@ -7,7 +7,8 @@ import os
 from constants import PUNCH_IMAGES, HUG_IMAGES, KISS_IMAGES, CRY_IMAGES, RAGE_IMAGES, LAUGH_IMAGES, WAVE_IMAGES
 from alive import keep_alive
 from asyncio import sleep
-
+from dotenv import load_dotenv
+load_dotenv()
 
 @tasks.loop(seconds=15)
 async def ping_bot():
@@ -312,7 +313,7 @@ for filename in os.listdir('./cogs'):
 
 
 
-client.run(os.getenv('Token'))
+client.run(os.environ.get('Token'))
 
 ## I made a .env because this repl.it project is public and other people would be able to see our token, but since i put it in a .env file noone will be able to see it
 
